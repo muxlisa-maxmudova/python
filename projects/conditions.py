@@ -28,3 +28,21 @@
 # else:
 #     print('This item is not for sale!')
 
+def main():
+   difficulty = input('Difficult or casual?: ')
+   if not (difficulty == 'Difficult' or difficulty == 'Casual'):
+       print('Enter a valid difficulty')
+       return
+   players = input('Multiplayer or Single-player?: ')
+   if not (players == 'Multiplayer' or difficulty == 'Single-player'):
+       print('Enter valid number of players')
+       return
+   if difficulty == 'Difficult' and players == 'Multiplayer':
+           print('Poker')
+   elif difficulty == 'Difficult' and players == 'Single-player':
+           print('Klondike')
+   elif difficulty == 'Casual'  and  players == 'Multiplayer':
+           print('Hearts')
+   else:
+       print('Clock')
+main()
