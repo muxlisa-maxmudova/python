@@ -9,6 +9,9 @@ grades = {
 }
 
 def render_grades():
-    for name in grades.keys():
-        print(f'{name} got {grades[name]}') # we do not need '' when we declare by ourselves
+    for name, grade in grades.items():
+        print(f'{name} acquired {convert(grade)}% of the programme')
+def convert(points):
+    return points/10*100
+
 render_grades()
