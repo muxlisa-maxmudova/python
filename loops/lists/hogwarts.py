@@ -1,5 +1,5 @@
 students = ['Hermione', 'Harry', 'Ron']
-for student in students: # in js we had to initialize
-    print(f'{student}') # we don't use underscore because we are using this variable
+for i in range(len(students)):
+    print(i+1, students[i]) # we can enter two values
 
 
