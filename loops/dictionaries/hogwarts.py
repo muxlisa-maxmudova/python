@@ -1,11 +1,26 @@
-students = {
-    'Hermione': 'Gryffindor',
-    'Harry': 'Gryffindor',
-    'Ron': 'Gryffindor',
-    'Draco': 'Slytherin'
-}
-def main():
-    for name in students:
-        print(f'{name} lives in {students[name]}')
-    print('That is all')
-main()
+students = [
+    {
+        "name": 'Hermione',
+        "house": 'Gryffindor',
+        "patronus": 'Otter'
+    },
+    {
+        "name": 'Harry',
+        "house": 'Gryffindor',
+        "patronus":'Stag'
+
+    },
+    {
+        'name':'Ron',
+        'house':'Gryffindor',
+        'patronus':'Jack Russell terrier'
+    },
+    {
+        'name': 'Draco',
+        'house':'Slytherin',
+        'patronus':None # special keyword
+    }
+]
+for student in students:
+    print(student["name"], student["house"], student["patronus"], sep=', ')
+
